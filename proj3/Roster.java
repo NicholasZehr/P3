@@ -25,7 +25,7 @@ public class Roster {
     /**
      * Declare mStudentList as ArrayList<Student>
      */
-    ???
+    private ArrayList<Student> mStudentList; 
 
     /**
      * Roster()
@@ -39,7 +39,9 @@ public class Roster {
      *     setStudentList() to make mStudentList refer to the ArrayList
      * end Roster
      */
-    ???
+    public Roster() {
+        setStudentList(new ArrayList<Student>());
+    }
 
     /**
      * addStudent()
@@ -51,7 +53,9 @@ public class Roster {
      *     add (will append) pStudent to mStudentList
      * end method
      */
-    ???
+    public void addStudent(Student pStudent) {
+        mStudentList.add(pStudent);
+    }
 
     /**
      * getStudent()
@@ -69,7 +73,9 @@ public class Roster {
      *     else return the Student object in getStudentList() at index 'index'
      * end getStudent
      */
-    ???
+    public Student getStudent(String pLastName) {
+        Searcher.search(get)
+    }
 
     /**
      * getStudentList()
