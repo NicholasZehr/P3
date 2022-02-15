@@ -1,12 +1,16 @@
 //**************************************************************************************************
 // CLASS: Main
 //
-// AUTHOR
-// Kevin R. Burger (burgerk@asu.edu)
-// Computer Science & Engineering Program
-// Fulton Schools of Engineering
-// Arizona State University, Tempe, AZ 85287-8809
-// (c) Kevin R. Burger 2014-2022
+// DESCRIPTION
+// The Main class for Project 2.
+//
+// COURSE AND PROJECT INFORMATION
+// CSE205 Object Oriented Programming and Data Structures, A-2022
+// Project Number: P3
+//
+//  * AUTHOR: Zehr, Nicholas
+// Asuriteid:1219718305
+// Email: nicholas.zehr@icloud.com
 //**************************************************************************************************
 package proj3;
 
