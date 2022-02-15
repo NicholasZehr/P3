@@ -27,51 +27,56 @@ import java.util.ArrayList;
  * B. See the
  * compareTo() method.
  */
-public class Student implements Comparable<Student> {
+public class Student implements Comparable <Student> {
 
     /**
      * mCurrStudent is a reference to the Student object which is currently being
      * displayed and
      * edited in the View. It should only be accessed via accessor/mutator methods.
      */
-    ???
+    private static Student mCurrStudent;
 
     /**
      * mExamList is an ArrayList of Integers storing the student's exam scores.
      */
-    ???
+    private ArrayList<Integer> mExamList;
 
     /**
      * The student's first name.
      */
-    ???
+    private String mFirstName;
 
     /**
      * mHomework List is an ArrayList of Integers storing the student's homework
      * scores.
      */
-    ???
+    private ArrayList<Integer> mHomework;
 
     /**
      * The student's last name.
      */
-    ???
+    private String mLastName;
 
     /**
      * Student()
      *
      * PSEUDOCODE:
      * method Student(pFirstName : String, pLastName : String)
-     * save parameters pFirstName and pLastName to instance variables by calling
-     * mutators
-     * -- Note that we only create the exam list here, it will be populated later
-     * create an ArrayList<Integer> and pass it off to setExamList()
-     * -- Note that we only create the homework list here, it will be populated
-     * later
-     * create an ArrayList<Integer> and pass it off to setHomeworkList()
-     * end Student()
+     *          save parameters pFirstName and pLastName to instance variables by calling
+     *          mutators
+     *          -- Note that we only create the exam list here, it will be populated later
+     *          create an ArrayList<Integer> and pass it off to setExamList()
+     *          -- Note that we only create the homework list here, it will be populated
+     *             later
+     *          create an ArrayList<Integer> and pass it off to setHomeworkList()
+     *          end Student()
      */
-    ???
+    public Student(String pFirstName, String pLastName) {
+        setFirstName(pFirstName);
+        setLastName(pLastName);
+        setExamList(new ArrayList<Integer>());
+        setHomeworkList(new ArrayList<Integer>());
+    }
 
     /**
      * addExam()

@@ -114,7 +114,9 @@ public class Roster {
      *     call Sorter.sort() passing the list of students returned from getStudentList()
      * end sortRoster
      */
-    ???
+    public void sortRoster() {
+        Sorter.sort(getStudentList());
+    }
 
     /**
      * Returns a String representation of this Roster. toString() methods are very handy for
