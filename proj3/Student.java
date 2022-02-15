@@ -50,7 +50,7 @@ public class Student implements Comparable <Student> {
      * mHomework List is an ArrayList of Integers storing the student's homework
      * scores.
      */
-    private ArrayList<Integer> mHomework;
+    private ArrayList<Integer> mHomeworkList;
 
     /**
      * The student's last name.
@@ -71,6 +71,7 @@ public class Student implements Comparable <Student> {
      *          create an ArrayList<Integer> and pass it off to setHomeworkList()
      *          end Student()
      */
+
     public Student(String pFirstName, String pLastName) {
         setFirstName(pFirstName);
         setLastName(pLastName);
@@ -88,10 +89,12 @@ public class Student implements Comparable <Student> {
      *               PSEUDOCODE:
      *               method addExam(pScore : int) : void
      *               call add(pScore) on getExamList() to add a new exam score to
-     *               the list of exam scores.
+     *                  the list of exam scores.
      *               end addExam
      */
-    ???
+    public void addExam(int pScore) {
+        getExamList().add(pScore);
+    }
 
     /**
      * addHomework()
@@ -107,7 +110,9 @@ public class Student implements Comparable <Student> {
      *               homework scores
      *               end addHomework
      */
-    ???
+    public void addHomework(int pScore) {
+        getHomeworkList().add(pScore);
+    }
 
     /**
      * compareTo()
@@ -182,7 +187,9 @@ public class Student implements Comparable <Student> {
      *
      * Returns the student's full name in the format: "lastname, firstname".
      */
-    ???
+    public String getFullName() {
+        return new String(mLastName + ", " + mFirstName);
+    }
 
     /**
      * getHomework()
