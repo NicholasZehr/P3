@@ -1,8 +1,8 @@
 //**************************************************************************************************
-// CLASSe GradebookWriter
+// CLASS GradebookWriter
 //
 // DESCRIPTION
-// The GradebookWriter class for Project 2.
+// The GradebookWriter class for Project 3.
 //
 // COURSE AND PROJECT INFORMATION
 // CSE205 Object Oriented Programming and Data Structures, A-2022

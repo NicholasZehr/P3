@@ -2,7 +2,7 @@
 // CLASS: GradebookReader
 //
 // DESCRIPTION
-// The GradebookReader class for Project 2.
+// The GradebookReader class for Project 3.
 //
 // COURSE AND PROJECT INFORMATION
 // CSE205 Object Oriented Programming and Data Structures, A-2022
