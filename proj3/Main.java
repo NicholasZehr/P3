@@ -17,6 +17,7 @@ package proj3;
 import java.io.File;
 import java.io.FileNotFoundException;
 import javax.swing.JFrame;
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.CloseAction;
 
 /**
  * The Main class containing the main() and run() methods.
@@ -69,6 +70,7 @@ public class Main {
             GradebookWriter gbWriter = new GradebookWriter("gradebook.dat");
             gbWriter.writeGradebook(getRoster());
             System.exit(0);
+            gbWriter.close();
 
         } catch (FileNotFoundException e) {
             String exitMsg = "Could not open gradebook.dat for writing. Exiting without saving.";

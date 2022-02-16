@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Searcher {
     
-    public int search(ArrayList<Student> pList, String pKey) {
+    public static int search(ArrayList<Student> pList, String pKey) {
         int retVal = -1;
         return retVal;
     }

@@ -142,7 +142,10 @@ public class Student implements Comparable <Student> {
      *                 implements compareTo().
      *                 end compareTo
      */
-    ???
+    @Override
+    public int compareTo(Student pStudent) {
+        return this.getLastName().compareTo(pStudent.getLastName());
+    }
 
     /**
      * Accessor method for mCurrStudent.
@@ -309,5 +312,17 @@ public class Student implements Comparable <Student> {
      *
      * Hint: use enhanced for loops
      */
-    ???
+    @Override
+    public String toString() {
+        String string = "";
+        string.concat(getLastName() + " " + getFirstName());
+        for (Integer i : mExamList) {
+            string.concat(Integer.toString(i) + " ");
+        }
+        for (Integer i : mHomeworkList) {
+            string.concat(Integer.toString(i) + " ");
+        }
+        string.trim();
+        return string;
+    }
 }

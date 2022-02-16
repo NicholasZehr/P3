@@ -74,7 +74,11 @@ public class Roster {
      * end getStudent
      */
     public Student getStudent(String pLastName) {
-        Searcher.search(get)
+        int index = Searcher.search(getStudentList(), pLastName);
+        if (index == -1) {
+            return null;
+        }
+        return getStudentList().get(index);
     }
 
     /**
@@ -115,7 +119,7 @@ public class Roster {
      * end sortRoster
      */
     public void sortRoster() {
-        Sorter.sort(getStudentList());
+        //Sorter.sort(getStudentList());
     }
 
     /**
